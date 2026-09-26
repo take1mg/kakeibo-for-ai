@@ -8,7 +8,8 @@
 <link rel="icon" href="icon.png">
 <!--
   公開先: https://take1mg.github.io/kakeibo-for-ai/（tools/publish-site.sh で take1mg/kakeibo-for-ai に上げる）
-  未記入: Square の支払いリンク（年額・ライフタイム）… data-pay の2か所
+  支払いリンク（data-pay の2か所）は Square の「リンク決済」（目的「支払いの受付」・正確な金額・1回限り・内税）。
+  名前に「家計簿」、年額には「年額」を含める（Google Apps Script が種類を見分ける）
   アプリの License.purchaseURL と Google Apps Script の PURCHASE_URL は、このページの #buy を指す
 -->
 <style>
@@ -234,8 +235,7 @@
           <li>自動では更新されません。続けるときだけ買い直してください</li>
           <li>期限前に更新しても、残りの期間はむだになりません</li>
         </ul>
-        <!-- 要記入：Square の支払いリンク（年額） -->
-        <a class="btn btn-secondary" data-pay="annual" href="#要記入-年額の支払いリンク">年額で購入する</a>
+        <a class="btn btn-secondary" data-pay="annual" href="https://square.link/u/1HVY1iqx">年額で購入する</a>
       </div>
       <div class="plan recommended">
         <span class="tag">ずっと使うなら</span>
@@ -246,8 +246,7 @@
           <li>年額の3年分で、4年目からはお得です</li>
           <li>アップデートも追加料金なしで受け取れます</li>
         </ul>
-        <!-- 要記入：Square の支払いリンク（ライフタイム） -->
-        <a class="btn btn-primary" data-pay="lifetime" href="#要記入-ライフタイムの支払いリンク">ライフタイムで購入する</a>
+        <a class="btn btn-primary" data-pay="lifetime" href="https://square.link/u/b7rkPmyE">ライフタイムで購入する</a>
       </div>
     </div>
 
